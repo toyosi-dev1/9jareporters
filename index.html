@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9ja Reporters Jobs — Real vacancies, posted daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">9ja<span>Reporters</span><em>Jobs</em></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="#jobs">Full Time</a>
+      <a href="#jobs">Part Time</a>
+      <a href="#jobs">Internships</a>
+      <a href="#" class="nav-cta">Post a Job</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">— Lagos · Abuja · Port Harcourt · Remote</p>
+    <h1>Nigeria's job market,<br>reported <em>daily</em>.</h1>
+    <p class="hero-sub">No recycled listings. No fake portals. Every vacancy here was posted this week, verified, and free to apply to.</p>
+
+    <form class="search-bar" id="searchForm">
+      <input type="text" id="searchInput" placeholder="Search “merchandiser”, “sales”, “remote”…" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="hero-stats">
+      <div><strong>212</strong><span>jobs posted this week</span></div>
+      <div><strong>38</strong><span>hiring companies</span></div>
+      <div><strong>6</strong><span>states covered</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-wrap" aria-label="Latest postings">
+  <div class="ticker" id="ticker">
+    <!-- duplicated in JS for seamless loop -->
+  </div>
+</div>
+
+<section class="categories wrap">
+  <a href="#jobs" class="cat-card cat-full">
+    <span class="cat-label">01</span>
+    <h3>Full&nbsp;Time</h3>
+    <p>Salaried roles across FMCG, tech, retail &amp; finance</p>
+    <span class="cat-count">146 open</span>
+  </a>
+  <a href="#jobs" class="cat-card cat-part">
+    <span class="cat-label">02</span>
+    <h3>Part&nbsp;Time</h3>
+    <p>Flexible shifts, weekend work, side income</p>
+    <span class="cat-count">41 open</span>
+  </a>
+  <a href="#jobs" class="cat-card cat-intern">
+    <span class="cat-label">03</span>
+    <h3>Internships</h3>
+    <p>Entry points for graduates and NYSC corp members</p>
+    <span class="cat-count">25 open</span>
+  </a>
+</section>
+
+<section class="jobs-section wrap" id="jobs">
+  <div class="section-head">
+    <h2>Latest vacancies</h2>
+    <div class="filter-pills">
+      <button class="pill active" data-filter="all">All</button>
+      <button class="pill" data-filter="full">Full Time</button>
+      <button class="pill" data-filter="part">Part Time</button>
+      <button class="pill" data-filter="intern">Internship</button>
+    </div>
+  </div>
+
+  <div class="job-grid" id="jobGrid">
+
+    <a href="job.html" class="job-card" data-type="full">
+      <div class="job-card-bar"></div>
+      <div class="job-card-body">
+        <span class="job-tag">Full Time</span>
+        <h3>Merchandiser</h3>
+        <p class="job-company">FMCG Distribution Co.</p>
+        <p class="job-meta">Lagos · Posted today</p>
+      </div>
+    </a>
+
+    <a href="job.html" class="job-card" data-type="full">
+      <div class="job-card-bar"></div>
+      <div class="job-card-body">
+        <span class="job-tag">Full Time</span>
+        <h3>Regional Sales Manager</h3>
+        <p class="job-company">FMCG Group Nigeria</p>
+        <p class="job-meta">Lagos · Posted 1 day ago</p>
+      </div>
+    </a>
+
+    <a href="job.html" class="job-card" data-type="full">
+      <div class="job-card-bar"></div>
+      <div class="job-card-body">
+        <span class="job-tag">Full Time</span>
+        <h3>Sales Representative</h3>
+        <p class="job-company">Consumer Goods Ltd.</p>
+        <p class="job-meta">Lagos · Posted 3 days ago</p>
+      </div>
+    </a>
+
+    <a href="job.html" class="job-card" data-type="intern">
+      <div class="job-card-bar"></div>
+      <div class="job-card-body">
+        <span class="job-tag">Internship</span>
+        <h3>Supply Chain Assistant</h3>
+        <p class="job-company">National Logistics Co.</p>
+        <p class="job-meta">Port Harcourt · Posted 5 days ago</p>
+      </div>
+    </a>
+
+    <a href="job.html" class="job-card" data-type="part">
+      <div class="job-card-bar"></div>
+      <div class="job-card-body">
+        <span class="job-tag">Part Time</span>
+        <h3>Remote Content Marketing Specialist</h3>
+        <p class="job-company">Digital Media Studio</p>
+        <p class="job-meta">Remote · Posted 1 week ago</p>
+      </div>
+    </a>
+
+    <a href="job.html" class="job-card" data-type="full">
+      <div class="job-card-bar"></div>
+      <div class="job-card-body">
+        <span class="job-tag">Full Time</span>
+        <h3>Supply Chain Manager</h3>
+        <p class="job-company">National Logistics Co.</p>
+        <p class="job-meta">Abuja · Posted 1 week ago</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section class="whatsapp-cta">
+  <div class="wrap wa-inner">
+    <div>
+      <h2>Want jobs before everyone else?</h2>
+      <p>Join our WhatsApp broadcast — new vacancies land there first, every weekday morning.</p>
+    </div>
+    <a href="#" class="wa-btn">Join the WhatsApp group →</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="logo">9ja<span>Reporters</span><em>Jobs</em></div>
+    <p>© 2026 9ja Reporters Jobs. Built for Nigeria's workforce.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
